@@ -1,15 +1,28 @@
-//
-//  main.cpp
-//  e1.4
-//
-//  Created by Sergio campos on 5/19/19.
-//  Copyright © 2019 Sergio campos. All rights reserved.
-//
+// •• E1.4Write a program that prints the balance of an account after the first, second, and third year. The account has an initial balance of $1,000 and earns 5 percent interest per year.
 
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+using namespace std;
+
+int main()
+{
+    float balance = 1000;
+    float ipy = 0.05; // interest per year
+    
+    cout << "initial balance is: " << balance << endl;
+    cout << "interest per year is: " << ipy << endl;
+    
+    balance = balance * ipy + balance;
+    
+    cout << "after 1 year the new balance is: " << balance << endl;
+    
+    balance = balance * ipy + balance;
+    
+    cout << "after 2 years the new balance is: " << balance << endl;
+    
+    balance = balance * ipy + balance;
+    
+    cout << "after 3 years the new balance is: " << balance << endl;
+    
+    
 }
